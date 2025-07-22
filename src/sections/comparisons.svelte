@@ -341,10 +341,13 @@
         <ArticleText> A <span class="fancy">Return on Investment</span> is a metric used to weigh the <span class="fancy">profit vs cost</span> of an investment. In the case of a bachelor's degree, that would be the <span class="fancy">cost of tuition</span> and a factor that involves either <span class="fancy">net worth</span> or <span class="fancy">entry salary</span> for that major.</ArticleText>
         <div class= "equation" style={`background-image: url('images/9.PNG'); background-size: cover;`}></div>
     </div>
+     
+    
+    
     <Background url="images/7.PNG" alignment={false}>
-        <h1 class="title">ROI from a Bachelor's Degree (Black Man vs. White Man)</h1>
-        <span class="sub">(Data from educationdata.org and BWDC) *Does not account for scholarships, loans, or major.</span>
-        <br><br><br>
+       <h1 class="title">ROI from a Bachelor's Degree (Black Man vs. White Man)</h1>
+         <span class="sub">(Data from educationdata.org and BWDC) *Does not account for scholarships, loans, or major.</span>
+         <br><br><br>
         <div class = 'column-wrapper'>
             <div class="black-man">
                 <h1 class="label">$<Counter value={298}/>K</h1>
@@ -371,7 +374,7 @@
     </Background>
     <Background url="images/8.PNG" alignment={false}>
         <h1 class="title">ROI from a Bachelor's Degree (Black Woman vs. White Man)</h1>
-        <span class="sub">(Data from educationdata.org and BWDC) *Does not account for scholarships, loans, or major.</span>
+        <span class="sub">(Data from <a href="https://educationdata.org/average-cost-of-college">educationdata.org</a> and BWDC) *Does not account for scholarships, loans, or major.</span>
         <br><br><br>
         <div class = 'column-wrapper'>
             <div class="black-woman">
@@ -414,10 +417,33 @@
         Many of these students, being <span class="fancy"> first generation graduates, </span> bear significant financial responsibilities that impede recovery from a low ROI and impact their <span class="fancy"> wealth accumulation.</span>
         </ArticleText>
     </div>
-    <Background>
-        sldfjsldfj
-    </Background>
-    
+    <br><br><br><br><br><br>
+    <div class="info-gap" id = "info-gap">
+            <h1>How can information gaps be closed?</h1>
+            <div class="marquee-wrapper">
+                <div class="marquee">
+                    <img src="images/11.PNG" alt=""> 
+                    <img src="images/12.PNG" alt="">
+                    <img src="images/13.PNG" alt="">
+                    <img src="images/11.PNG" alt=""> 
+                    <img src="images/12.PNG" alt="">
+                    <img src="images/13.PNG" alt="">
+                    <img src="images/11.PNG" alt=""> 
+                    <img src="images/12.PNG" alt="">
+                    <img src="images/13.PNG" alt="">
+                    
+                </div>
+            </div>
+        </div>
+        <Background url='images/1.png' alignment={true}>
+            <h1>
+                <span class="end"> With the removal of DEI initiatives, <span class="fancy2">it is critical</span> that we step up. 
+                <br><br>
+                Students from all backgrounds deserve the access <span class="fancy2"> to ROI data, career guidance, and opportunities </span>  that enable them to assign worth to their Bachelor's Degree.</span>
+            </h1>
+
+        </Background>
+        
     <!-- <ArticleText>Race Employment Disparity in STEM <br> <span class="sub"> for those with STEM Bachelor's Degrees</span></ArticleText>
     <ArticleText>BreakDown of Majors that yield highest ROI <br> <span class="sub">https://educationdata.org/college-degree-roi</span></ArticleText>
     <ArticleText>BreakDown of races that take on each major <br> <span class="sub">https://www.clevelandfed.org/publications/economic-trends/2015/et-20150331-racial-and-ethnic-differences-in-college-major-choice</span></ArticleText>
@@ -431,7 +457,7 @@
     .ROI{
         background-color: #FFDAC6;
         width: 100%;
-        height: 120vh;
+        height: auto;
         z-index: 2;
         position: relative;
         /* padding-top: 3%; */
@@ -440,12 +466,17 @@
         justify-content: center;
         flex-direction: column;
     }
+    a{
+        text-decoration: none;
+        color: #df783d;
+    }
     .ROI-conclusion{
         background-color: #FFDAC6;
         width: 100%;
         height: 90vh;
         z-index: 2;
         padding-top: 20%;
+        padding-bottom: 20%;
         position: relative;
         /* padding-top: 3%; */
         display: flex;
@@ -475,6 +506,10 @@
         
         
     }
+   .info-gap{
+    position: relative;
+    z-index:1;
+   }
     .column-wrapper {
         display: flex;
         gap: 40%; /* push children to opposite ends */
@@ -492,12 +527,12 @@
         display: flex;
         flex-direction: column;
         gap: 0;
-        width: 38%; /* controls column width */
+        width: 30%; /* controls column width */
         /* background-color: rgba(255, 255, 255, 0.3); optional styling */
         /* padding: 2.5rem; */
         border-radius: 10px;
         height: auto;
-        background-color: #FFDAC6;
+        background-color: #ffdac685;
         /* box-sizing: border-box; */
     }
     h1{
@@ -519,6 +554,12 @@
         margin-top: 0;
         
     }
+    .end{
+        color: #c87a2b;
+        font-size: 3vw;
+        font-family: fantasy;
+        
+    }
     .title{
         font-size: 3.5vw;
         /* color: #ab481a; */
@@ -527,12 +568,20 @@
     .sub{
         font-size: 1.5vw;
         margin: 0;
+        font-family: fantasy;
         color: #877512;
     }
     .fancy{
         font-family:fantasy;
         color: #98830c;
         text-shadow: 2px 2px 0 #BABD8D;
+        
+    }
+    .fancy2{
+        font-family:fantasy;
+        color: #98830c;
+        text-shadow: 2px 2px 0 #BABD8D;
+        font-size: 3vw;
         
     }
     .equation{
@@ -553,7 +602,75 @@
         bottom: 10%;
         /* border: 2px solid white; */
     }
-    
+    .marquee-wrapper{
+    overflow: hidden;
+    padding: 8vh;
+}
+.marquee{
+    display: flex;
+    width: 500%;
+    flex-direction: row;
+    gap: 1%;
+    /* border: 2px solid white; */
+    animation: scroll-left 120s linear infinite;
+}
+.marquee img{
+    /* aspect-ratio: 1/1; */
+    aspect-ratio: 1.4/1;
+   height: 60vh;
+   border: 8px solid #c87a2b;
+   border-radius: 25px;
+}
+@keyframes scroll-left {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+    @media (max-width: 768px) {
+        .ROI{
+            margin-top: 10%;
+            margin-bottom: 40%;
+            height:auto;
+            
+            /* border: 2px solid white; */
+        }
+        .column-wrapper{
+            gap: 1%;
+            align-items: center;
+            justify-content: center;
+            margin:0;
+            /* margin-top: 50%; */
+            margin-bottom: 50%;
+            padding: 0;
+            left: 0;
+            width: 95%;
+        }
+        .black-man,
+        .white-man,
+        .black-woman {
+            width: 45%; /* controls column width */
+            height: auto;
+            background-color: #f7e9e985;
+            padding: 1rem;
+            left: 0;
+            /* box-sizing: border-box; */
+        }
+        .counter-label{
+            font-size: 3.8vw;
+        }
+        .sub{
+            font-size: 2.2vw;
+        }
+        .ROI-conclusion{
+            /* top: 155vh; */
+        }
+        .marquee img{
+            height: 30vh;
+        }
+    }
    
 
 </style>

@@ -377,7 +377,7 @@
         padding-left: 5%;
         color: #ab481a;
         text-shadow: 5px 5px 0 #c87a2b;
-        background-color: #FFDAC6;
+        /* background-color: #FFDAC6; */
     }
     .fancy{
         font-family:fantasy;
@@ -407,5 +407,45 @@
         border-radius: 25px;
         z-index: 2;
         width: 80%;
+    }
+    @media (max-width: 768px) {
+      
+        /* .chart, .chartOne{
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+        
+        } */
+         .chart,
+  .chartOne {
+    width: 80vw;
+    height: auto;
+    /* margin: 20px auto; */
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 2px 0px 4px #c87a2b;
+    border-radius: 20px;
+  }
+
+  .fancy1 {
+    font-size: 6.5vw;
+    text-align: center;
+    display: block;
+    padding: 1rem 0;
+  }
+
+  .right {
+    font-size: 9vw;
+    text-align: center;
+    display: block;
+  }
+
+  .Right {
+    font-size: 13vw;
+    text-align: center;
+    display: block;
+    padding-left: 0;
+  }
+      
     }
 </style>

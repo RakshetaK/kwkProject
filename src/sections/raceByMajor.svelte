@@ -21,7 +21,7 @@
     const callback = (entries, observer) => {
         entries.forEach((entry) => {
             const elem = entry.target;
-            if(entry.isIntersecting){
+            if(entry.isIntersecting || window.innerWidth<=768){
                 show = true;
                 console.log("true");
                 // observer.unobserve(entry.target);
@@ -137,7 +137,7 @@
     const callbackTwo = (entries, observer) => {
         entries.forEach((entry) => {
             const elem = entry.target;
-            if(entry.isIntersecting){
+            if(entry.isIntersecting ){
                 show2 = true;
                 // observer.unobserve(entry.target);
             }
@@ -419,16 +419,16 @@
 
     .chartRow {
         position: fixed;
-        top: 0;
-        left: 0;
         width: 100%;
         height: auto;
         display: flex;
-        aspect-ratio: 2/1;
+        top: 50vh;
+        transform: translateY(-50%);
         align-items: center;
         justify-content: center;
         z-index: 0;
-        padding: 0;
+        padding-left: 16px;
+        padding-right: 16px;
         transition: opacity 2000ms ease;
         pointer-events: none; /* Allow text to scroll over it */
     }
@@ -441,9 +441,59 @@
         justify-content: space-between;
         align-items: center;
         pointer-events: auto;
+        left:0;
         /* box-shadow: 0 0 0 8px #c87a2b;
         border-radius: 25px; */
         
     }
+    @media (max-width:768px){
+        /* .chartWrapper{
+            flex-direction: column;
+            margin-bottom: 20vh;
+            position: relative;
+            
+        }
+        .chartRow{
+            position: relative;
+            order: 1;
+        }
+        .chart{
+            position: relative;
+            width: 80%;
+            height: auto;
+        }
+        .scroll{
+            top:0;
+            order:0;
+            position: relative;
+        }
+        .wrapper {
+        display: flex;
+        flex-direction: column;
+    } */
+    .chartWrapper{
+        flex-direction: column;
+        margin-bottom: 20vh;
+        position: relative;
+        /* top: 140vh; */
+        z-index:2;
+    }
+    .chartRow{
+        position: relative;
 
+        order: 1;
+    }
+    .chart{
+        position: relative;
+        width: 80%;
+        height: auto;
+    }
+    .scroll{
+        top: 0;
+        order: 0;
+        position: relative;
+        top: 60vh;
+        z-index:2;
+    }
+    }
 </style>

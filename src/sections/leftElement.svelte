@@ -208,5 +208,30 @@
         text-align: center;
         font-size: 2.5vw;
     }
+    @media (max-width: 768px){
+        div{
+            
+        }
+        .chartOne{
+            position: relative;
+            background-color: #f7e9e985;
+        }
+        .text{
+            padding-left: 0;
+        }
+        .counter-label{
+            font-size: 3.5vw;
+        }
+        .description{
+            width: 80%;
+            padding-top: 55px;
+            padding-bottom: 25px;
+            font-size: 3.5vw;
+            left:0;
+        }
+        .fancy{
+            font-size: 4.5vw;
+        }
+    }
    
 </style>

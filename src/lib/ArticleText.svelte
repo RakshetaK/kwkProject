@@ -20,4 +20,9 @@
         position: relative;
         z-index: 1;
     }
+    @media (max-width: 768px){
+        .article-text{
+            padding: 3.5rem;
+        }
+    }
 </style>

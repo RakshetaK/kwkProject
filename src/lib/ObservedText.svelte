@@ -27,4 +27,10 @@
         font-family: fantasy;
         /* text-shadow: 2px 2px 1px #FA9500; */
     }
+    @media (max-width: 768px) {
+        .text{
+            font-size: 3.5vh;
+        }
+
+    }
 </style>

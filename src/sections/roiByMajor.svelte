@@ -20,6 +20,10 @@
             const elem = entry.target;
             if(entry.isIntersecting){
                 show = true;
+                // if(window.innerWidth<=768){
+                //     var element = document.getElementById("one");
+                //     element.text = "In addition to systemic barriers causing imbalances in employment (as shown for STEM professions), Choice of major also plays a significant role in the benefits (a.k.a return on investment) of a bachelor's degree. So how do this data correspond to racial disparities in ROI?"
+                // }
                 // observer.unobserve(entry.target);
             }else{
                 show = false;
@@ -138,7 +142,7 @@
 
     <Background >
          <div class="wrapper" >
-        <div class="scroll">
+            <div class="scroll"id="two" >
             <ObservedText callback={callback} options={chartOptions}>
                 In addition to systemic barriers causing imbalances in employment (as shown for STEM professions)...
             </ObservedText>
@@ -152,12 +156,13 @@
             </div>
         </div>
         <!-- {/if} -->
-        <div class="scroll">
+          
+        <div class="scroll" id="one">
             <ObservedText callback={callback} options={chartOptions}>
                 Choice of major also plays a significant role in the benefits (a.k.a return on investment) of a bachelor's degree
             </ObservedText>
         </div>
-        <div class="scroll">
+        <div class="scroll" id="three">
             <ObservedText callback={callback} options={chartOptions}>
                 So how do this data correspond to racial disparities in ROI?
             </ObservedText>
@@ -215,5 +220,18 @@
         margin-top: 50vh;
         margin-bottom: 50vh;
         
+    }
+    @media (max-width:768px){
+      /* .chartRow{
+        position: relative;
+      } */
+      /* .scroll{
+        margin-top: 0;
+        margin-bottom: 0;
+      } */
+      /* #two, #three{
+        display: none;
+      } */
+
     }
 </style>
