@@ -209,9 +209,7 @@
         font-size: 2.5vw;
     }
     @media (max-width: 768px){
-        div{
-            
-        }
+        
         .chartOne{
             position: relative;
             background-color: #f7e9e985;

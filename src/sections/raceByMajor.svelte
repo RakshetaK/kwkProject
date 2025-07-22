@@ -447,30 +447,7 @@
         
     }
     @media (max-width:768px){
-        /* .chartWrapper{
-            flex-direction: column;
-            margin-bottom: 20vh;
-            position: relative;
-            
-        }
-        .chartRow{
-            position: relative;
-            order: 1;
-        }
-        .chart{
-            position: relative;
-            width: 80%;
-            height: auto;
-        }
-        .scroll{
-            top:0;
-            order:0;
-            position: relative;
-        }
-        .wrapper {
-        display: flex;
-        flex-direction: column;
-    } */
+       
     .chartWrapper{
         flex-direction: column;
         margin-bottom: 20vh;

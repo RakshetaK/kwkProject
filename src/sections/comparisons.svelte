@@ -139,198 +139,6 @@
     };
    
    
-    // //chart two (series)
-    // let show1 = $state(false);
-    
-    // const callback1 = (entries, observer) => {
-    //     entries.forEach((entry) => {
-    //         const elem = entry.target;
-    //         if(entry.isIntersecting){
-    //             show1 = true;
-    //             // observer.unobserve(entry.target);
-                
-    //         }
-           
-    //     });
-    // };
-
-    // const seriesDataOne = [
-    // {
-    //     type: "spline",
-    //     name: "Asian",
-    //     data: [[2011, 50.8],
-    //                 [2012, 51.9],
-    //                 [2013, 53.9],
-    //                 [2014, 52.7],
-    //                 [2015, 54.4],
-    //                 [2016, 56.4],
-    //                 [2017, 55.4],
-    //                 [2018, 57.1],
-    //                 [2019, 58.6],
-    //                 [2020, 61.7],
-    //                 [2021, 61.9],
-    //                 [2022, 60.2],
-    //                 [2023, 62.9]],
-    //     color: "#7C6A0A",
-    //     animation: { defer: 0 }
-    // },
-    // {
-    //     type: "spline",
-    //     name: "Hispanic",
-    //     data: [[2011, 14.1],
-    //                 [2012, 14.5],
-    //                 [2013, 15.1],
-    //                 [2014, 15.2],
-    //                 [2015, 15.5],
-    //                 [2016, 16.4],
-    //                 [2017, 17.2],
-    //                 [2018, 18.3],
-    //                 [2019, 18.8],
-    //                 [2020, 20.8],
-    //                 [2021, 20.6],
-    //                 [2022, 20.9],
-    //                 [2023, 21.5]],
-    //     color: "#c87a2b",
-    //     animation: { defer: period }
-    // },
-    // {
-    //     type: "spline",
-    //     name: "Black",
-    //     data: [[2011, 20.2],
-    //                 [2012, 21.4],
-    //                 [2013, 22.0],
-    //                 [2014, 22.8],
-    //                 [2015, 22.9],
-    //                 [2016, 23.5],
-    //                 [2017, 24.3],
-    //                 [2018, 25.6],
-    //                 [2019, 26.3],
-    //                 [2020, 27.9],
-    //                 [2021, 28.3],
-    //                 [2022, 27.9],
-    //                 [2023, 29.0]],
-    //     color: "#ab481a",
-    //     animation: { defer: period * 2 }
-    // },
-    // {
-    //     type: "spline",
-    //     name: "White",
-    //     data: [[2011, 34.0],
-    //                 [2012, 34.5],
-    //                 [2013, 35.2],
-    //                 [2014, 35.6],
-    //                 [2015, 36.2],
-    //                 [2016, 37.3],
-    //                 [2017, 38.1],
-    //                 [2018, 38.8],
-    //                 [2019, 40.1],
-    //                 [2020, 41.3],
-    //                 [2021, 41.9],
-    //                 [2022, 41.8],
-    //                 [2023, 42.3]],
-    //     color: "#98830c",
-    //     animation: { defer: period * 3 }
-    // }
-    // ];
-
-    // let optionsTwo = {
-    //     chart: {
-    //         type: "spline",
-    //         backgroundColor: "#BABD8D",
-    //         borderColor: "#a8910e",
-    //         borderWidth: 8,
-    //         borderRadius: 20,
-    //         animation: true,
-    //     },
-    //     title: {
-    //         text: "Nationwide attainment of Bachelor's Degrees",
-    //         style: {
-    //             color:"#542e08",
-    //             fontFamily: "fantasy",
-                
-    //         },
-    //     },
-    //     subtitle: {
-    //         text: "From Black Wealth Data Center",
-    //         style: {
-    //             color:"#542e08",
-    //             fontFamily: "fantasy",
-                
-    //         },
-    //     },
-    //     yAxis:{
-    //         title: {
-    //             text: "% of Population with Bachelor's",
-    //             style: {
-    //             color: "#542e08",
-    //             fontSize: "16px",
-    //             fontFamily: "fantasy"
-    //             }
-    //         },
-    //         labels: {
-    //             style: {
-    //             color: "#542e08",
-    //             fontSize: "12px",
-    //             fontWeight: 2000,
-    //             fontFamily: "fantasy"
-    //             }
-    //         },
-            
-    //     },
-    //     xAxis:{
-    //         labels: {
-    //             style: {
-    //             color: "#542e08",
-    //             fontSize: "12px",
-    //             fontWeight: 2000,
-    //             fontFamily: "fantasy"
-    //             }
-    //         },
-    //         gridLineColor: "#542e08",
-    //         lineColor: "#542e08",
-    //         lineWidth: 4,
-    //         tickColor: "#542e08",
-    //         tickWidth: 4,
-    //     },
-    //     legend:{
-    //         itemStyle: {
-                
-    //             color: "#542e08",
-    //             fontSize: "12px",
-    //             fontWeight: 2000,
-    //             fontFamily: "fantasy"
-                
-    //         },
-    //     },
-    //     gridLineColor: "#542e08",
-    //     lineColor: "#542e08",
-    //     lineWidth: 4,
-    //     tickColor: "#542e08",
-    //     tickWidth: 4,
-    //     plotOptions: {
-    //         series: {
-    //             animation:{
-    //                 duration:1200
-    //             },
-    //             marker: {
-    //                 enabled: false
-    //             },
-    //             lineWidth: 5
-                
-    //         }
-            
-            
-    //     },
-    //     series: seriesDataOne,
-    // };
-    //start by introducing how roi is measured
-    //compare white man net worth to black man net worth -> then transition into black women to draw attention to the difference
-    //put in context of STEM
-    //compare degrees (in vs out in terms of money)
-    //compare which races are likely to take on which degrees
-    //look at how race effects education and job opportunity + income
-
-    //chart Two
     
     
 </script>
@@ -444,12 +252,7 @@
 
         </Background>
         
-    <!-- <ArticleText>Race Employment Disparity in STEM <br> <span class="sub"> for those with STEM Bachelor's Degrees</span></ArticleText>
-    <ArticleText>BreakDown of Majors that yield highest ROI <br> <span class="sub">https://educationdata.org/college-degree-roi</span></ArticleText>
-    <ArticleText>BreakDown of races that take on each major <br> <span class="sub">https://www.clevelandfed.org/publications/economic-trends/2015/et-20150331-racial-and-ethnic-differences-in-college-major-choice</span></ArticleText>
-    <ArticleText>Passion vs Practicality: Does ROI Always Win?</ArticleText>
-    <ArticleText>What does the future of ROI for Bachelor's degrees look like under our current administration?</ArticleText> -->
-
+   
     
 </div>
 
@@ -484,20 +287,7 @@
         justify-content: center;
         flex-direction: column;
     }
-    /* .raceByMajor{
-        width: 100%;
-    } */
-    /* .chartRow{
-        width: 50%;
-        display: flex;
-        flex-direction: row;
-        gap: 5%;
-        padding: 1rem;
-        position: sticky;
-        top: 50vh;
-        transform: translateY(-50%);
-    } */
-    
+   
     .scene{
         width: 100%;
         left: 0;
@@ -527,7 +317,7 @@
         display: flex;
         flex-direction: column;
         gap: 0;
-        width: 30%; /* controls column width */
+        width: 30%; 
         /* background-color: rgba(255, 255, 255, 0.3); optional styling */
         /* padding: 2.5rem; */
         border-radius: 10px;
@@ -562,8 +352,6 @@
     }
     .title{
         font-size: 3.5vw;
-        /* color: #ab481a; */
-        /* padding-bottom: 5%; */
     }
     .sub{
         font-size: 1.5vw;
@@ -603,46 +391,42 @@
         /* border: 2px solid white; */
     }
     .marquee-wrapper{
-    overflow: hidden;
-    padding: 8vh;
-}
-.marquee{
-    display: flex;
-    width: 500%;
-    flex-direction: row;
-    gap: 1%;
-    /* border: 2px solid white; */
-    animation: scroll-left 120s linear infinite;
-}
-.marquee img{
-    /* aspect-ratio: 1/1; */
-    aspect-ratio: 1.4/1;
-   height: 60vh;
-   border: 8px solid #c87a2b;
-   border-radius: 25px;
-}
-@keyframes scroll-left {
-    0%{
-        transform: translateX(0%);
+        overflow: hidden;
+        padding: 8vh;
     }
-    100%{
-        transform: translateX(-50%);
+    .marquee{
+        display: flex;
+        width: 500%;
+        flex-direction: row;
+        gap: 1%;
+        animation: scroll-left 120s linear infinite;
     }
-}
+    .marquee img{
+        
+        aspect-ratio: 1.4/1;
+        height: 60vh;
+        border: 8px solid #c87a2b;
+        border-radius: 25px;
+    }
+    @keyframes scroll-left {
+        0%{
+            transform: translateX(0%);
+        }
+        100%{
+            transform: translateX(-50%);
+        }
+    }
     @media (max-width: 768px) {
         .ROI{
             margin-top: 10%;
             margin-bottom: 40%;
             height:auto;
-            
-            /* border: 2px solid white; */
         }
         .column-wrapper{
             gap: 1%;
             align-items: center;
             justify-content: center;
             margin:0;
-            /* margin-top: 50%; */
             margin-bottom: 50%;
             padding: 0;
             left: 0;
@@ -651,21 +435,18 @@
         .black-man,
         .white-man,
         .black-woman {
-            width: 45%; /* controls column width */
+            width: 45%;
             height: auto;
             background-color: #f7e9e985;
             padding: 1rem;
             left: 0;
-            /* box-sizing: border-box; */
+            
         }
         .counter-label{
             font-size: 3.8vw;
         }
         .sub{
             font-size: 2.2vw;
-        }
-        .ROI-conclusion{
-            /* top: 155vh; */
         }
         .marquee img{
             height: 30vh;

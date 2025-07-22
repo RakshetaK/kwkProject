@@ -8,7 +8,8 @@
     import "highcharts/modules/exporting";
     import ArticleText from "../lib/ArticleText.svelte";
     import {fade} from 'svelte/transition';
-    let chart;
+    // svelte-ignore non_reactive_update
+        let chart;
     // let chartOne;
     let show = $state(false);
     const chartOptions = {
@@ -221,17 +222,5 @@
         margin-bottom: 50vh;
         
     }
-    @media (max-width:768px){
-      /* .chartRow{
-        position: relative;
-      } */
-      /* .scroll{
-        margin-top: 0;
-        margin-bottom: 0;
-      } */
-      /* #two, #three{
-        display: none;
-      } */
-
-    }
+   
 </style>

@@ -202,9 +202,7 @@
         .text{
             right: 0;
         }
-        .counter-label{
-            font-size: 3.5vw;
-        }
+       
         .description{
             width: 80%;
             padding-top: 55px;
